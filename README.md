@@ -20,15 +20,15 @@
 * Jupyter Notebook (혹은 Python)이 없어도 Elastic Stack을 사용하는데 전혀 문제 없습니다.
 * Aggregation이 단계별로 어떻게 진행되는지 공유하기 위해 올린 자료이니 필요하신 분만 다운 받으시면 됩니다.
 * 설치
-* 기본적으로 python과 pip가 설치되어 있어야 합니다.
-* 파일을 다운 받을 자기 컴퓨터의 경로로 이동
-    * 명령어 : `$ cd {path}`
-    * 예시 : `$ cd ~/elasticstack`
-* higee/elastic repository 내려받기 : `$ git clone https://github.com/higee/elastic.git`
-* python package 설치
-    * `$ cd elastic`
-    * `$ pip install -r requirements.txt`
-* 보고 싶은 파일이 있는 경로고 가서 jupyter notebook 실행
-    * 예) Week1의 bucket_aggregation 보고 싶은 경우
-    * `$ cd Week1/bucket_aggregation`
-    * `$ jupyter notebook`
+    * 기본적으로 python과 pip가 설치되어 있어야 합니다.
+    * 파일을 다운 받을 자기 컴퓨터의 경로로 이동
+        * 명령어 : `$ cd {path}`
+        * 예시 : `$ cd ~/elasticstack`
+    * higee/elastic repository 내려받기 : `$ git clone https://github.com/higee/elastic.git`
+    * python package 설치
+        * `$ cd elastic`
+        * `$ pip install -r requirements.txt`
+    * 보고 싶은 파일이 있는 경로고 가서 jupyter notebook 실행
+        * 예) Week1의 bucket_aggregation 보고 싶은 경우
+        * `$ cd Week1/bucket_aggregation`
+        * `$ jupyter notebook`
