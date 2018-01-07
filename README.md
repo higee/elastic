@@ -1,4 +1,4 @@
-### Elastic Stack을 활용한 Dashboard 만들기
+### Elastic Stack을 활용한 Dashboard 만들기 (1기)
 ---
 
 #### 안내
