@@ -10,10 +10,10 @@ else if (doc['주문시간'].value == 3) {
 else if (doc['주문시간'].value == 4) { 
   return "목" 
 } 
-else if (doc['주문시간'].value == 4) { 
+else if (doc['주문시간'].value == 5) { 
   return "금" 
 } 
-else if (doc['주문시간'].value == 4) {
+else if (doc['주문시간'].value == 6) {
   return "토" 
 }
 else {
