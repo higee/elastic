@@ -1,0 +1,11 @@
+GET shopping/shopping/_search
+{
+  "query": {
+    "range": {
+      "주문시간": {
+        "gte": "2017-02-15"
+      }
+    }
+  }
+}
+
