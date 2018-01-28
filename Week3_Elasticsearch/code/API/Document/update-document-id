@@ -1,0 +1,7 @@
+POST week3_higee/week3_higee/2/_update
+{
+  "doc": {
+    "price" : 20000
+  } 
+}
+
