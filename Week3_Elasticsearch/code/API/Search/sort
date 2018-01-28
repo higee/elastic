@@ -1,0 +1,14 @@
+GET shopping/shopping/_search
+{
+  "query": {
+    "match_all": {}
+  },
+  "sort": [
+    {
+      "판매자평점": {
+        "order": "desc"
+      }
+    }
+  ]
+}
+
