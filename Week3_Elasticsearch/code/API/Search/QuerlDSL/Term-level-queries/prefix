@@ -1,9 +1,0 @@
-GET shopping/shopping/_search
-{
-  "query": {
-    "prefix" : { 
-      "고객주소_시도" : "경상" 
-    }
-  }
-}
-

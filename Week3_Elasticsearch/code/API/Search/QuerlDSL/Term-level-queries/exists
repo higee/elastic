@@ -1,9 +1,0 @@
-GET shopping/shopping/_search
-{
-  "query": {
-    "exists" : { 
-      "field" : "상품분류" 
-    }
-  }
-}
-

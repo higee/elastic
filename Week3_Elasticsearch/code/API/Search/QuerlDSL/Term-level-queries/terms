@@ -1,9 +1,0 @@
-GET shopping/shopping/_search
-{
-  "query" : {
-    "terms" : {
-      "상품분류" : ["셔츠", "스웨터"]
-    }
-  }
-}
-
