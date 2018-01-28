@@ -1,0 +1,16 @@
+POST week3_higee/week3_higee/2/_update
+{
+  "doc" : {
+    "price" : "50000"
+  },
+  "doc_as_upsert" : true
+}
+
+POST week3_higee/week3_higee/777/_update
+{
+  "doc" : {
+    "price" : "50000"
+  },
+  "doc_as_upsert" : true
+}
+
