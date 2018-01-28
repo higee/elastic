@@ -1,0 +1,16 @@
+POST shopping/shopping/_search?scroll=10m
+{
+  "size": 500,
+  "query": {
+    "match" : {
+      "상품분류" : "셔츠"
+    }
+  }
+}
+
+POST  /_search/scroll 
+{
+  "scroll" : "10m", 
+  "scroll_id" : "{_scroll_id}" 
+}
+
