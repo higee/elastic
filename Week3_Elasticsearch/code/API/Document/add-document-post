@@ -1,0 +1,5 @@
+POST week3_higee/week3_higee
+{
+  "price" : 5000,
+  "age" : 19
+}
