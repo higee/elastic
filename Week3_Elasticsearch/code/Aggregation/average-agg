@@ -1,0 +1,33 @@
+GET shopping/shopping/_search
+{
+  "size": 0,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match_all": {}
+        },
+        {
+          "range": {
+            "주문시간": {
+              "gte": 1511954725116,
+              "lte": 1517138725116,
+              "format": "epoch_millis"
+            }
+          }
+        }
+      ],
+      "must_not": []
+    }
+  },
+  "_source": {
+    "excludes": []
+  },
+  "aggs": {
+    "1": {
+      "avg": {
+        "field": "상품가격"
+      }
+    }
+  }
+}
