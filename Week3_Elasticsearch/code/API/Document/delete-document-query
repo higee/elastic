@@ -2,7 +2,7 @@ POST week3_higee/_delet_by_query
 {
   "query" : {
     "match" : {
-      "age" : 17
+      "age" : 20
     }
   }
 }
