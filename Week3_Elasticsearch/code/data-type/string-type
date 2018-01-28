@@ -1,0 +1,39 @@
+PUT my_index
+{
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "test-keyword": {
+          "type": "keyword"
+        },
+        "test-text": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}
+
+POST my_index/my_type
+{
+  "test-keyword" : "패스트캠퍼스 엘라스틱서치",
+  "test-text" : "패스트캠퍼스 엘라스틱서치"
+}
+
+GET my_index/_search
+{
+  "query": {
+    "term": {
+      "test-keyword": "패스트캠퍼스"
+    }
+  }
+}
+
+GET my_index/_search
+{
+  "query": {
+    "term": {
+      "test-text": "패스트캠퍼스"
+    }
+  }
+}
