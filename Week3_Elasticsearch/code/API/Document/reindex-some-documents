@@ -5,7 +5,7 @@ POST _reindex
     "type" : "week3_higee",
     "query": {
       "term": {
-        "age": 17
+        "age": 19
       }
     }
   },
