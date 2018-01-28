@@ -1,3 +1,5 @@
+PUT week3_higee
+
 PUT week3_higee/_mapping/week3_higee
 {
   "properties": {
