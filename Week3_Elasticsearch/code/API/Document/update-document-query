@@ -9,3 +9,15 @@ POST week3_higee/week3_higee/_update_by_query
     }
   }
 }
+
+POST week3_higee/week3_higee/_update_by_query
+{
+  "script": {
+    "source": "ctx._source.price = 7777"
+  },
+  "query": {
+    "term": {
+      "age": 17
+    }
+  }
+}
