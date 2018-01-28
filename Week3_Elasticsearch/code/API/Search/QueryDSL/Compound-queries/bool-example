@@ -1,0 +1,29 @@
+GET {Index 이름}/{Type 이름}/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "term" : {
+            "고객주소_시도" : "서울특별시"
+          }
+        }
+      ], 
+      “must_not”: [
+        {
+          "term" : {
+            “상품분류" : "셔츠"
+          }
+        }
+      ], 
+      "should": [
+        {
+          "term": {
+            "결제카드": "시티"
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
