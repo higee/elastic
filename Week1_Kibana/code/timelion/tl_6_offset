@@ -4,8 +4,8 @@
   timefield=주문시간,
   metric=sum:상품가격,
   q=고객성별:남성,
-  offset=-1M
+  offset=-1y
 )
 
 # timelion format
-.es(index=shopping, timefield=주문시간, metric=sum:상품가격, q=고객성별:남성, offset=-1M)
+.es(index=shopping, timefield=주문시간, metric=sum:상품가격, q=고객성별:남성, offset=-1y)
