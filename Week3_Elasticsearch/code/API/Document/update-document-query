@@ -1,7 +1,7 @@
 POST week3_higee/week3_higee/_update_by_query
 {
   "script": {
-    "source": "ctx._source['price'] = 50"
+    "source": "ctx._source['age'] = 50"
   },
   "query": {
     "term": {
@@ -13,7 +13,7 @@ POST week3_higee/week3_higee/_update_by_query
 POST week3_higee/week3_higee/_update_by_query
 {
   "script": {
-    "source": "ctx._source.price = 70"
+    "source": "ctx._source.age = 70"
   },
   "query": {
     "term": {
