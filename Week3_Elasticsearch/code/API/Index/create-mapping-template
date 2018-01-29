@@ -1,6 +1,6 @@
 PUT _template/template_higee
 {
-  "template" : "higee-log*",
+  "template" : "higee-log-*",
   "mappings" : {
     "my_type" : {
       "properties" : {
