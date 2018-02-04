@@ -1,0 +1,3 @@
+$ cd /home/ec2-user/
+$ wget https://downloads.mysql.com/archives/get/file/mysql-connector-java-5.1.36.tar.gz
+$ tar -xzvf mysql-connector-java-5.1.36.tar.gz
