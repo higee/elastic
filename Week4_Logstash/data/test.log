@@ -1,8 +1,0 @@
-2017-11-28 12:11:23, app.py, main, 91, INFO, ValueError
-2017-09-13 23:13:03, item.py, get, 31, DEBUG, ZeroDivisionError
-2017-12-18 12:25:53, security.py, auth, 51, DEBUG, KeyError
-2017-10-08 22:31:35, app.py, main, 51, DEBUG, ZeroDivisionError
-2017-11-22 03:49:55, security.py, auth, 21, DEBUG, SyntaxError
-2017-10-31 13:21:43, db.py, main, 51, DEBUG, KeyError
-2017-09-29 20:35:39, item.py, post, 21, CRITICAL, NameError
-2017-11-20 02:05:11, item.py, put, 61, INFO, SyntaxError
