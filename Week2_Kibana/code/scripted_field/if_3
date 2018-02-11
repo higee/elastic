@@ -1,19 +1,19 @@
-if (doc['주문시간'].value == 1) { 
+if (doc['주문시간'].date.dayOfWeek == 1) { 
   return "월" 
 } 
-else if (doc['주문시간'].value == 2) { 
+else if (doc['주문시간'].date.dayOfWeek == 2) { 
   return "화" 
 } 
-else if (doc['주문시간'].value == 3) { 
+else if (doc['주문시간'].date.dayOfWeek == 3) { 
   return "수" 
 } 
-else if (doc['주문시간'].value == 4) { 
+else if (doc['주문시간'].date.dayOfWeek == 4) { 
   return "목" 
 } 
-else if (doc['주문시간'].value == 5) { 
+else if (doc['주문시간'].date.dayOfWeek == 5) { 
   return "금" 
 } 
-else if (doc['주문시간'].value == 6) {
+else if (doc['주문시간'].date.dayOfWeek == 6) {
   return "토" 
 }
 else {
