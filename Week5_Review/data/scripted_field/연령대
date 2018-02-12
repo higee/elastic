@@ -1,0 +1,17 @@
+# type : string
+# format : string
+
+if (doc['고객나이'].value < 20) { 
+  return "10대" 
+} 
+else if (doc['고객나이'].value < 30) { 
+  return "20대" 
+} 
+else if (doc['고객나이'].value < 40) { 
+  return "30대" 
+} 
+else if (doc['고객나이'].value < 50) { 
+  return "40대" } 
+else {
+  return "50대 이상"
+}
