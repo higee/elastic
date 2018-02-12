@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "AV-a4D_kMbjMXoGxGOm2",
+    "_type": "dashboard",
+    "_source": {
+      "title": "shopping",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AV-a39bwMbjMXoGxGOm1\",\"panelIndex\":1,\"row\":20,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-cRSgUMbjMXoGxGOm-\",\"panelIndex\":3,\"row\":8,\"size_x\":12,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-fRVLRMbjMXoGxGOnG\",\"panelIndex\":4,\"row\":25,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-fWzcbMbjMXoGxGOnI\",\"panelIndex\":5,\"row\":13,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-fYkv9MbjMXoGxGOnK\",\"panelIndex\":6,\"row\":23,\"size_x\":9,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-fZf1qMbjMXoGxGOnL\",\"panelIndex\":7,\"row\":10,\"size_x\":4,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-flmpTMbjMXoGxGOnO\",\"panelIndex\":9,\"row\":17,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AV-fmZWYMbjMXoGxGOnP\",\"panelIndex\":10,\"row\":25,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AV-fwTJNMbjMXoGxGOnU\",\"panelIndex\":12,\"row\":23,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":5,\"id\":\"AV-hPtBVMbjMXoGxGRHp\",\"panelIndex\":13,\"row\":10,\"size_x\":8,\"size_y\":3,\"type\":\"visualization\"},{\"col\":5,\"id\":\"AV-hcoV3MbjMXoGxGRHv\",\"panelIndex\":14,\"row\":4,\"size_x\":8,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-hWVA5MbjMXoGxGRHt\",\"panelIndex\":15,\"row\":28,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-hSqEbMbjMXoGxGRHr\",\"panelIndex\":16,\"row\":31,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AV-iH9V2RJy4v-Hns44v\",\"panelIndex\":17,\"row\":4,\"size_x\":4,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWGI8fjSPloSIAlpOE6c\",\"panelIndex\":18,\"row\":1,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"vis\":{\"defaultColors\":{\"0 - 3\":\"rgb(255,255,204)\",\"3 - 6\":\"rgb(255,234,155)\",\"6 - 9\":\"rgb(254,206,106)\",\"9 - 12\":\"rgb(253,162,69)\",\"12 - 15\":\"rgb(252,105,49)\",\"15 - 18\":\"rgb(234,41,32)\",\"18 - 20\":\"rgb(194,3,37)\"}}},\"P-10\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-12\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"},\"legendOpen\":false}},\"P-13\":{\"vis\":{\"defaultColors\":{\"0 - 20\":\"rgb(0,104,55)\",\"20 - 40\":\"rgb(135,203,103)\",\"40 - 60\":\"rgb(255,255,190)\",\"60 - 80\":\"rgb(249,142,82)\",\"80 - 100\":\"rgb(165,0,38)\"},\"legendOpen\":false}},\"P-15\":{\"vis\":{\"legendOpen\":false}},\"P-16\":{\"vis\":{\"colors\":{\"50th percentile of 배송소요시간\":\"#F29191\",\"5th percentile of 배송소요시간\":\"#6ED0E0\"},\"legendOpen\":true}},\"P-17\":{\"mapCenter\":[37.26530995561875,127.19970703125],\"mapZoom\":6},\"P-3\":{\"vis\":{\"colors\":{\"0 to 20\":\"#9AC48A\",\"21 to 30\":\"#65C5DB\",\"31 to 40\":\"#EA6460\",\"41 to +∞\":\"#D683CE\"},\"legendOpen\":true}},\"P-4\":{\"vis\":{\"legendOpen\":false}},\"P-5\":{\"mapCenter\":[36.94989178681327,127.52380371093749],\"mapZoom\":7},\"P-9\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
