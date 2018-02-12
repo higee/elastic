@@ -1,0 +1,4 @@
+# type : number
+# format : number
+
+doc['주문시간'].date.hourOfDay
