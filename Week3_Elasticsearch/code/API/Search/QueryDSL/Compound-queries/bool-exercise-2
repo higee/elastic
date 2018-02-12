@@ -1,0 +1,37 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "고객나이": {
+              "gt": 25
+            }
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "wildcard": {
+            "서울주소_시도": "경?도"
+            }
+          }
+      ], 
+      "should": [
+        {
+          "term": {
+            "결제카드": "우리"
+          }
+        },
+        {
+          "script": {
+            "script": {
+              "source": "doc['주문시간'].date.hourOfDay > 18"
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
