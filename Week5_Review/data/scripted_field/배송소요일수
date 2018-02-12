@@ -1,0 +1,15 @@
+# type : string
+# format : string
+
+if ((doc['수령시간'].value-doc['주문시간'].value)/1000/60/60 <= 24) { 
+  return "당일" 
+} 
+else if ((doc['수령시간'].value-doc['주문시간'].value)/1000/60/60 <= 48) { 
+  return "이틀" 
+} 
+else if ((doc['수령시간'].value-doc['주문시간'].value)/1000/60/60 <= 72) { 
+  return "사흘" 
+} 
+else {
+  return "나흘이상"
+}
