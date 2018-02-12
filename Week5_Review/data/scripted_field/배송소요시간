@@ -1,0 +1,4 @@
+# type : number
+# format : number
+#
+(doc['수령시간'].value-doc['주문시간'].value)/1000/60/60
