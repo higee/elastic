@@ -1,0 +1,212 @@
+[
+  {
+    "_id": "AV-a39bwMbjMXoGxGOm1",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_heatmap",
+      "visState": "{\"title\":\"shopping_heatmap\",\"type\":\"heatmap\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"colorsNumber\":7,\"colorsRange\":[],\"enableHover\":true,\"invertColors\":false,\"legendPosition\":\"right\",\"percentageMode\":false,\"setColorRange\":false,\"times\":[],\"type\":\"heatmap\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"color\":\"#00000\",\"rotate\":0,\"show\":true},\"scale\":{\"defaultYExtents\":false,\"type\":\"linear\"},\"show\":false,\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"요일\",\"size\":7,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"max\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"요일_sort\"}},\"order\":\"asc\",\"orderBy\":\"custom\",\"customLabel\":\"요일\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"시간대\",\"ranges\":[{\"from\":0,\"to\":5},{\"from\":6,\"to\":10},{\"from\":11,\"to\":16},{\"from\":17,\"to\":21},{\"from\":22,\"to\":24}],\"customLabel\":\"시간대\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 50\":\"rgb(255,255,204)\",\"50 - 100\":\"rgb(255,234,155)\",\"100 - 150\":\"rgb(254,206,106)\",\"150 - 200\":\"rgb(253,162,69)\",\"200 - 250\":\"rgb(252,105,49)\",\"250 - 300\":\"rgb(234,41,32)\",\"300 - 350\":\"rgb(194,3,37)\"},\"legendOpen\":false,\"colors\":null}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fWzcbMbjMXoGxGOnI",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_coordinate_map",
+      "visState": "{\"title\":\"shopping_coordinate_map\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Heatmap\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":\"7\",\"heatMinOpacity\":\"0.52\",\"heatRadius\":\"13\",\"heatBlur\":\"17\",\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}},\"type\":\"tile_map\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"상품가격\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"물건좌표\",\"autoPrecision\":true,\"useGeocentroid\":true,\"precision\":2}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"mapZoom\":7,\"mapCenter\":[36.34167804918315,128.660888671875]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fRVLRMbjMXoGxGOnG",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_pie",
+      "visState": "{\"title\":\"shopping_pie\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"split\",\"params\":{\"field\":\"연령대\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"\",\"row\":false}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"구매사이트\",\"size\":3,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true,\"colors\":{\"옥션\":\"#6D1F62\",\"티몬\":\"#F29191\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fwTJNMbjMXoGxGOnU",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_goal",
+      "visState": "{\"title\":\"shopping_goal\",\"type\":\"goal\",\"params\":{\"addLegend\":false,\"addTooltip\":true,\"gauge\":{\"autoExtend\":false,\"backStyle\":\"Full\",\"colorSchema\":\"Green to Red\",\"colorsRange\":[{\"from\":0,\"to\":24}],\"gaugeColorMode\":\"None\",\"gaugeStyle\":\"Full\",\"gaugeType\":\"Arc\",\"invertColors\":false,\"labels\":{\"color\":\"black\",\"show\":true},\"orientation\":\"vertical\",\"percentageMode\":true,\"scale\":{\"color\":\"#333\",\"labels\":false,\"show\":false,\"width\":2},\"style\":{\"bgColor\":false,\"bgFill\":\"#000\",\"fontSize\":60,\"labelColor\":false,\"subText\":\"\"},\"type\":\"meter\",\"useRanges\":false,\"verticalSplit\":false},\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"top_hits\",\"schema\":\"metric\",\"params\":{\"field\":\"배송소요시간\",\"aggregate\":\"average\",\"size\":100,\"sortField\":\"배송소요시간\",\"sortOrder\":\"asc\",\"customLabel\":\"당일 배송\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"},\"legendOpen\":true,\"colors\":{\"0 - 100\":\"#EA6460\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fZf1qMbjMXoGxGOnL",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_markdown",
+      "visState": "{\"title\":\"shopping_markdown\",\"type\":\"markdown\",\"params\":{\"markdown\":\"#### FAQ\\n---\\n* 요일별/시간대별 주문 건 수가 궁금하다면?\\n* 같은 날짜 기준으로 전년 대비 상승폭이 큰 날은?\\n* 연령대별 주문 건 수는?\\n* 지역별 매출액의 분포는?\\n* 어떤 상품이 잘 팔릴까?\\n* 연령대별 가장 활발하게 이용하는 사이트는?\",\"type\":\"markdown\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-hPtBVMbjMXoGxGRHp",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_gauge",
+      "visState": "{\"title\":\"shopping_gauge\",\"type\":\"gauge\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"gauge\":{\"verticalSplit\":false,\"extendRange\":true,\"percentageMode\":true,\"gaugeType\":\"Arc\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"Labels\",\"colorsRange\":[{\"from\":0,\"to\":5000000},{\"from\":5000000,\"to\":10000000},{\"from\":10000000,\"to\":15000000},{\"from\":15000000,\"to\":20000000},{\"from\":20000000,\"to\":25000000}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":true,\"labels\":false,\"color\":\"#333\"},\"type\":\"meter\",\"style\":{\"bgWidth\":0.9,\"width\":0.9,\"mask\":false,\"bgMask\":false,\"maskBars\":50,\"bgFill\":\"#eee\",\"bgColor\":false,\"subText\":\"\",\"fontSize\":60,\"labelColor\":true}},\"type\":\"gauge\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"상품가격\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"결제카드\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 20\":\"rgb(0,104,55)\",\"20 - 40\":\"rgb(135,203,103)\",\"40 - 60\":\"rgb(255,255,190)\",\"60 - 80\":\"rgb(249,142,82)\",\"80 - 100\":\"rgb(165,0,38)\"},\"colors\":{\"0 - 50\":\"#F4D598\",\"50 - 100\":\"#F9BA8F\",\"0 - 33\":\"#70DBED\",\"33 - 67\":\"#EA6460\",\"67 - 100\":\"#BA43A9\",\"20 - 40\":\"#BF1B00\",\"40 - 60\":\"#1F78C1\",\"60 - 80\":\"#962D82\",\"80 - 100\":\"#3F2B5B\",\"0 - 20\":\"#F9934E\"},\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-hcoV3MbjMXoGxGRHv",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_horizontal",
+      "visState": "{\"title\":\"shopping_horizontal\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{\"text\":\"여성이 좋아하는 아이템\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"높은 평점 상품 매출액\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"높은 평점 상품 매출액\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"horizontal_bar\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"판매자평점\",\"size\":1,\"order\":\"desc\",\"orderBy\":\"_term\"}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metricAgg\",\"params\":{\"field\":\"상품가격\"}},\"customLabel\":\"높은 평점 상품 매출액\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"significant_terms\",\"schema\":\"segment\",\"params\":{\"field\":\"상품분류\",\"size\":5,\"customLabel\":\"여성이 좋아하는 아이템\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"고객성별\",\"value\":\"여성\"},\"query\":{\"match\":{\"고객성별\":{\"query\":\"여성\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-iH9V2RJy4v-Hns44v",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_region_map",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"field\":\"고객주소_시도\",\"order\":\"desc\",\"orderBy\":\"1\",\"size\":20},\"schema\":\"segment\",\"type\":\"terms\"}],\"listeners\":{},\"params\":{\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"legendPosition\":\"bottomright\",\"selectedJoinField\":{\"description\":\"City name\",\"name\":\"name\"},\"selectedLayer\":{\"fields\":[{\"description\":\"City name\",\"name\":\"name\"}],\"name\":\"Korea City\",\"url\":\"https://s3.ap-northeast-2.amazonaws.com/higee-map/korea.geojson\"},\"type\":\"region_map\"},\"title\":\"shopping_region_map\",\"type\":\"region_map\"}",
+      "uiStateJSON": "{\"mapCenter\":[34.161818161230386,129.407958984375],\"mapZoom\":7}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fYkv9MbjMXoGxGOnK",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_tag_cloud",
+      "visState": "{\"title\":\"shopping_tag_cloud\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":18,\"maxFontSize\":57,\"type\":\"tagcloud\",\"hideLabel\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"상품가격\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"상품분류\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-cRSgUMbjMXoGxGOm-",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_area",
+      "visState": "{\"title\":\"shopping_area\",\"type\":\"area\",\"params\":{\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100,\"filter\":false,\"rotate\":0},\"title\":{\"text\":\"주문 날짜\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"주문 수\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"area\",\"mode\":\"stacked\",\"data\":{\"label\":\"주문 수\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"area\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"주문 수\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"주문시간\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"주문 날짜\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"연령대\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"10대\":\"#E24D42\",\"20대\":\"#6ED0E0\",\"40대\":\"#705DA0\",\"30대\":\"#7EB26D\"},\"legendOpen\":true},\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-hWVA5MbjMXoGxGRHt",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_vertical",
+      "visState": "{\"title\":\"shopping_vertical\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"지역\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"배송 건수\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"배송 건수\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"배송 건수\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"고객주소_시도\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"지역\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"배송소요일수\",\"size\":5,\"orderAgg\":{\"id\":\"3-orderAgg\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"배송소요일수_sort\"}},\"order\":\"desc\",\"orderBy\":\"custom\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-hSqEbMbjMXoGxGRHr",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_line",
+      "visState": "{\"title\":\"shopping_line\",\"type\":\"line\",\"params\":{\"grid\":{\"categoryLines\":true,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"날짜\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"배송소요시간\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"배송소요시간\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"line\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"percentiles\",\"schema\":\"metric\",\"params\":{\"field\":\"배송소요시간\",\"percents\":[5,25,50,75,95],\"customLabel\":\"배송소요시간\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"주문시간\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"날짜\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-flmpTMbjMXoGxGOnO",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_data_table",
+      "visState": "{\"title\":\"shopping_data_table\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"type\":\"table\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"bucket\",\"params\":{\"field\":\"주문시간\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{},\"customLabel\":\"날짜\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"metric\",\"params\":{\"field\":\"상품가격\",\"customLabel\":\"매출\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"cumulative_sum\",\"schema\":\"metric\",\"params\":{\"metricAgg\":\"3\",\"customLabel\":\"누적 매출\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"derivative\",\"schema\":\"metric\",\"params\":{\"metricAgg\":\"3\",\"customLabel\":\"전일 대비 매출 증감\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"serial_diff\",\"schema\":\"metric\",\"params\":{\"metricAgg\":\"3\",\"json\":\"{\\\"lag\\\":7}\",\"customLabel\":\"전주 대비 매출 증감\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWGI8fjSPloSIAlpOE6c",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_timelion",
+      "visState": "{\"title\":\"shopping_timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=shopping, timefield=주문시간, metric=sum:상품가격).label('올해 매출'),  .es(index=shopping, timefield=주문시간, metric=sum:상품가격, offset=-1y).label('작년 매출').color(#00b8ff),  .es(index=shopping, timefield=주문시간, metric=sum:상품가격).subtract(.es(index=shopping, timefield=주문시간, metric=sum:상품가격, offset=-1y)).if(gte, 50000, .es(index=shopping, timefield=주문시간, metric=sum:상품가격), null).lines(fill=5, width=2).color(#fd8282).label('전년 대비 50,000 이상 상승 구간').yaxis(label=매출)\",\"interval\":\"1d\",\"type\":\"timelion\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV-fmZWYMbjMXoGxGOnP",
+    "_type": "visualization",
+    "_source": {
+      "title": "shopping_metric",
+      "visState": "{\"title\":\"shopping_metric\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Metric\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"useRange\":false,\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"simple\",\"style\":{\"fontSize\":\"33\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"사이트별 주문 건 수\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"구매사이트\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-axS6mMbjMXoGxGH3D\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
