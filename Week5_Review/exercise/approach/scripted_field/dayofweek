@@ -1,0 +1,4 @@
+# type : string
+# format : string
+
+if (doc['date_order'].date.dayOfWeek < 6) { return "평일" } else { return "주말" }
