@@ -1,0 +1,66 @@
+GET week5_exercise_higee/_search
+{
+  "_source": ["customer_location", "customer_age"], 
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "customer_age": {
+                    "gte": 75
+                  }
+                }
+              },
+              {
+                "term": {
+                  "customer_location": "서울특별시"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "customer_age": {
+                    "lte": 35
+                  }
+                }
+              },
+              {
+                "term": {
+                  "customer_location": "부산광역시"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "customer_age": {
+                    "lte": 35,
+                    "gte": 30
+                  }
+                }
+              },
+              {
+                "wildcard": {
+                  "customer_location": "충청*"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
