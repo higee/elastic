@@ -1,0 +1,37 @@
+GET week5_exercise_higee/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "range": {
+            "customer_age": {
+              "gte": 25
+            }
+          }
+        },
+        {
+          "wildcard": {
+            "customer_location": "경상*"
+          }
+        }
+      ],
+      "should": [
+        {
+          "term": {
+            "customer_card": "신한"
+          }
+        },
+        {
+          "script": {
+            "script": {
+              "source": "doc['date_order'].date.hourOfDay > 18"
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
+    
