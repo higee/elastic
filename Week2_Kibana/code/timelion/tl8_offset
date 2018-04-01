@@ -1,0 +1,13 @@
+# readable code
+.es(
+  index=shopping, 
+  timefield=주문시간
+).label(이번달), 
+.es(
+  index=shopping, 
+  timefield=주문시간, 
+  offset=-1M
+).label(저번달)
+
+# timelion code
+.es(index=shopping, timefield=주문시간).label(이번달), .es(index=shopping, timefield=주문시간, offset=-1M).label(저번달)
