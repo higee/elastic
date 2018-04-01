@@ -1,0 +1,21 @@
+# readable code
+.es(
+  index=shopping, 
+  timefield=주문시간
+).points().label(데이터), 
+.es(
+  index=shopping, 
+  timefield=주문시간
+).movingaverage(10).label("10일 이동평균"), 
+.es(
+  index=shopping, 
+  timefield=주문시간
+).trend().label("올해 추세선"), 
+.es(
+  index=shopping, 
+  timefield=주문시간, 
+  offset=-1y
+).trend().label("작년 추세선")
+
+# timelion code
+.es(index=shopping, timefield=주문시간).points().label(데이터), .es(index=shopping, timefield=주문시간).movingaverage(10).label("10일 이동평균"), .es(index=shopping, timefield=주문시간).trend().label("올해 추세선"), .es(index=shopping, timefield=주문시간, offset=-1y).trend().label("작년 추세선")
