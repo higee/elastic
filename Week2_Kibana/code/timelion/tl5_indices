@@ -1,0 +1,12 @@
+#readable code
+.es(
+  index=test2_2018.03.01, 
+  timefield=주문시간
+), 
+.es(
+  index=shopping, 
+  timefield=주문시간
+)
+
+#timelion code
+.es(index=test2_2018.03.01, timefield=주문시간), .es(index=shopping, timefield=주문시간)
