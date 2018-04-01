@@ -1,0 +1,9 @@
+# readable code
+.es(
+  index=shopping, 
+  timefield=주문시간, 
+  q=고객성별:남성
+)
+
+# timelion code
+.es(index=shopping, timefield=주문시간, q=고객성별:남성)
