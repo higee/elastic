@@ -1,0 +1,8 @@
+# readable code
+.es(
+  index=shopping, 
+  timefield=주문시간
+)
+
+# timelion
+.es(index=shopping, timefield=주문시간)
