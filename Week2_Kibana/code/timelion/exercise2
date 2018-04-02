@@ -10,4 +10,4 @@
 ).range(0,1).label("전년도 증감")
 
 # timelion code
-.es(index=shopping, timefield=주문시간).range(0,1).label("올해 증감"), .es(index=shopping, timefield=주문시간, offset=-1y).range(0,1).label("전년도 증감"
+.es(index=shopping, timefield=주문시간).range(0,1).label("올해 증감"), .es(index=shopping, timefield=주문시간, offset=-1y).range(0,1).label("전년도 증감")
