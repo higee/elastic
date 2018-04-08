@@ -1,0 +1,9 @@
+if (doc['상품개수'].value < 3) { 
+  return "저소비" 
+} 
+else if (doc['고객나이'].value < 6) { 
+  return "평균" 
+} 
+else {
+  return "과소비"
+}
