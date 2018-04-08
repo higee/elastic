@@ -1,0 +1,1 @@
+doc['고객성별'].value + '-' + doc['결제카드'].value
