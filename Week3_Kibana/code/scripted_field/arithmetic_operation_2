@@ -1,0 +1,1 @@
+doc['상품가격'].value * doc['상품개수'].value
