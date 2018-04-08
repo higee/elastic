@@ -1,0 +1,21 @@
+if (doc['주문시간'].date.dayOfWeek == 1) { 
+  return "월" 
+} 
+else if (doc['주문시간'].date.dayOfWeek == 2) { 
+  return "화" 
+} 
+else if (doc['주문시간'].date.dayOfWeek == 3) { 
+  return "수" 
+} 
+else if (doc['주문시간'].date.dayOfWeek == 4) { 
+  return "목" 
+} 
+else if (doc['주문시간'].date.dayOfWeek == 5) { 
+  return "금" 
+} 
+else if (doc['주문시간'].date.dayOfWeek == 6) {
+  return "토" 
+}
+else {
+  return "일"
+}
