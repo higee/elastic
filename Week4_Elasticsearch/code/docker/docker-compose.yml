@@ -10,11 +10,10 @@ services:
       network.host: '127.0.0.1'
       ES_JAVA_OPTS: '-Xms128m -Xmx128m'
       bootstrap.memory_lock: 'true'
-      xpack.security.enabled: false
-      xpack.monitoring.enabled: false
-      xpack.ml.enabled: false
-      xpack.graph.enabled: false
-      xpack.watcher.enabled: false
+      xpack.security.enabled: 'false'
+      xpack.monitoring.enabled: 'false'
+      xpack.graph.enabled: 'false'
+      xpack.watcher.enabled: 'false'
     ulimits:
       memlock:
         soft: -1
@@ -34,6 +33,7 @@ services:
     container_name: logstash
     environment:
       JAVA_OPTS: '-Xms128m -Xmx128m'
+      xpack.monitoring.enabled: 'false'
     depends_on: ['elasticsearch']
     networks:
       - elastic
@@ -49,6 +49,10 @@ services:
     environment:
       - ELASTICSEARCH_HOST=elasticsearch
       - ELASTICSEARCH_PORT=9200
+      - xpack.security.enabled=false
+      - xpack.monitoring.enabled=false
+      - xpack.graph.enabled=false
+      - xpack.reporting.enabled=false
     depends_on: ['elasticsearch']
     ports:
       - "5601:5601"
