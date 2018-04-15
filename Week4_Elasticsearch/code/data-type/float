@@ -1,0 +1,74 @@
+PUT my_index
+{
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "test-double": {
+          "type": "double"
+        },
+        "test-half-float": {
+          "type": "half_float"
+        }
+      }
+    }
+  }
+}
+
+POST my_index/my_type
+{
+  "test-double" : 3.1,
+  "test-half-float" : 3.1
+}
+
+POST my_index/my_type
+{
+  "test-double" : 3.111111,
+  "test-half-float" : 3.111111
+}
+
+POST my_index/my_type
+{
+  "test-double" : 3.11111122222,
+  "test-half-float" : 3.11111122222
+}
+
+GET my_index/_search
+{
+  "query" : {
+    "range": {
+      "test-double": {
+        "gte": 3.111111,
+        "lte" : 3.1111112
+      }
+    }
+  }
+}
+
+GET my_index/_search
+{
+  "query" : {
+    "range": {
+      "test-half-float": {
+        "gte": 3.111111,
+        "lte" : 3.1111112
+      }
+    }
+  }
+}
+
+GET my_index/_search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET my_index/_search
+{ 
+  "query": {
+    "match_all": {}
+  }, 
+  "docvalue_fields": [
+    "test-double", "test-half-float"
+  ]
+}
