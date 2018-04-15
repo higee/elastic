@@ -1,0 +1,10 @@
+PUT week4_higee
+
+PUT week4_higee/_mapping/week4_higee
+{
+  "properties" : {
+    "price" : {
+      "type" : "integer"
+    }
+  }
+} 
