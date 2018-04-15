@@ -1,3 +1,3 @@
-PUT higee-log-2017.01.01
+PUT higee-log-2018.01.01
 
-GET higee-log-2017.01.01/_mapping
+GET higee-log-2018.01.01/_mapping
