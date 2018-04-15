@@ -1,0 +1,17 @@
+PUT week4_higee
+
+PUT week4_higee_mapping
+{
+  "mappings" : {
+    "week4_higee_mapping" : {
+      "properties" : {
+        "price" : {
+          "type" : "integer"
+          },
+        "time" : {
+          "type" : "date"
+        }    
+      }
+    }
+  }
+} 
