@@ -10,6 +10,10 @@ services:
       network.host: '127.0.0.1'
       ES_JAVA_OPTS: '-Xms128m -Xmx128m'
       bootstrap.memory_lock: 'true'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -22,6 +26,8 @@ services:
     container_name: logstash
     environment:
       JAVA_OPTS: '-Xms128m -Xmx128m'
+      LS_JAVA_OPTS: '-Xms128m -Xmx128m'
+    depends_on: ['elasticsearch']
     networks:
       - elastic
     volumes:
