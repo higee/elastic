@@ -4,10 +4,9 @@ PUT test1
     "test1" : {
       "properties" : {
         "skill" : {
-          "type" : "text"
+          "type" : "keyword"
         }
       }
     }
   }
 }
-1
