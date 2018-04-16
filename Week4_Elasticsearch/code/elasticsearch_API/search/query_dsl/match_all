@@ -1,0 +1,6 @@
+GET shopping/_search
+{
+  "query" : {
+    "match_all" : {}
+  }
+}
