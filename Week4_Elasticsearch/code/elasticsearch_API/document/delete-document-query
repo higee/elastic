@@ -1,0 +1,8 @@
+POST week4_higee/_delet_by_query
+{
+  "query" : {
+    "match" : {
+      "age" : 20
+    }
+  }
+}
