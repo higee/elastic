@@ -1,0 +1,23 @@
+PUT week4_higee/week4_higee/1
+{
+  "price" : 10000,
+  "age" : 17
+}
+
+PUT week4_higee/week4_higee/2
+{
+  "price" : 2000,
+  "age" : 20
+}
+
+PUT week4_higee/week4_higee/3
+{
+  "price" : 1000,
+  "age" : 25
+}
+
+PUT week4_higee/week4_higee/4
+{
+  "price" : 7000,
+  "age" : 33
+}
