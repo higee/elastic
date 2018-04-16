@@ -1,0 +1,11 @@
+GET shopping/shopping/_search
+{
+  "query": {
+    "script": {
+      "script": {
+        "source": "doc['주문시간'].date.hourOfDay > 15 ",
+        "lang": "painless"
+      }
+    }
+  }
+}
