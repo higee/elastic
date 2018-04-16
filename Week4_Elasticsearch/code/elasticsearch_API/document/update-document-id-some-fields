@@ -1,0 +1,7 @@
+POST week4_higee/week4_higee/3/_update
+{
+  "doc": {
+    "age" : 50
+  } 
+}
+
