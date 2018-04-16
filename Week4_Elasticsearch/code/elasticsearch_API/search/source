@@ -1,0 +1,18 @@
+GET shopping/shopping/_search
+{
+  "_source": "구매사이트",
+  "query" : {
+    "match_all" : {}
+  }
+}
+
+GET shopping/shopping/_search
+{
+  "_source": {
+    "includes" : ["고객*", "구매사이트"],
+    "excludes" : "상품*"
+  },
+  "query" : {
+    "match_all" : {}
+  }
+}
