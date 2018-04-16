@@ -1,0 +1,14 @@
+POST test1/test1
+{
+  "skill" : "Machine Learning"
+}
+
+POST test1/test1
+{
+  "skill" : "Deep Learning"
+}
+
+POST test1/test1
+{
+  "skill" : "Data Visualization"
+}
