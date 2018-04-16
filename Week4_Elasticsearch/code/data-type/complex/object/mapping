@@ -1,0 +1,21 @@
+PUT object
+{
+  "mappings": {
+    "object": { 
+      "properties": {
+        "고객주소_시도": {
+          "type": "keyword"
+        },
+        "상품": { 
+          "properties": {
+            "가격":  { "type": "integer" },
+            "분류":  { "type": "keyword" },
+            "개수":  { "type": "integer" },
+             }
+            }
+          }
+        }
+      }
+    }
+  }
+}
