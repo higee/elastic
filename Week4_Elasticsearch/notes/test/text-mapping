@@ -1,0 +1,13 @@
+PUT test1
+{
+  "mappings" : {
+    "test1" : {
+      "properties" : {
+        "skill" : {
+          "type" : "text"
+        }
+      }
+    }
+  }
+}
+1
