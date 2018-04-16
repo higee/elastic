@@ -1,0 +1,8 @@
+GET test1/_search
+{
+  "query": {
+    "match": {
+      "skill": "Learning"
+    }
+  }
+}
