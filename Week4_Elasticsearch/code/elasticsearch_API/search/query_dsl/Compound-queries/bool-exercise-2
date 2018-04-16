@@ -1,0 +1,23 @@
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "range": {
+            "상품가격": {
+              "gte" : 20000
+            }
+          }
+        },
+        {
+          "script": {
+            "script": {
+              "source": "doc['주문시간'].date.hourOfDay > 18"
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
