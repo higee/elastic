@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "AV-a4D_kMbjMXoGxGOm2",
+    "_type": "dashboard",
+    "_source": {
+      "title": "shopping",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":7,\"id\":\"AWJdhp4tzMQVnr-9MxxP\",\"panelIndex\":19,\"row\":8,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWJdii5xzMQVnr-9MxxQ\",\"panelIndex\":20,\"row\":12,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWJgEGqCzMQVnr-9MxxW\",\"panelIndex\":21,\"row\":3,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJglBU6zMQVnr-9Mxxa\",\"panelIndex\":22,\"row\":1,\"size_x\":9,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJgoeObzMQVnr-9Mxxc\",\"panelIndex\":23,\"row\":3,\"size_x\":6,\"size_y\":5,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJgsNh9zMQVnr-9Mxxe\",\"panelIndex\":24,\"row\":8,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":10,\"id\":\"AWJguWqpzMQVnr-9Mxxg\",\"panelIndex\":25,\"row\":1,\"size_x\":3,\"size_y\":2,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJgycpEzMQVnr-9Mxxi\",\"panelIndex\":26,\"row\":12,\"size_x\":6,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJg0q4CzMQVnr-9Mxxk\",\"panelIndex\":27,\"row\":16,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWJg1XpWzMQVnr-9Mxxl\",\"panelIndex\":28,\"row\":16,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJg1wbTzMQVnr-9Mxxm\",\"panelIndex\":29,\"row\":19,\"size_x\":12,\"size_y\":4,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJg3QUCzMQVnr-9Mxxo\",\"panelIndex\":30,\"row\":23,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWGI8fjSPloSIAlpOE6c\",\"panelIndex\":31,\"row\":26,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-19\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(255,255,204)\",\"7 - 14\":\"rgb(254,217,118)\",\"14 - 21\":\"rgb(253,141,60)\",\"21 - 28\":\"rgb(227,27,28)\"},\"legendOpen\":false}},\"P-20\":{\"vis\":{\"legendOpen\":false}},\"P-21\":{\"mapCenter\":[36.54494944148322,128.199462890625],\"mapZoom\":6},\"P-23\":{\"mapCenter\":[36.31512514748051,127.9193115234375],\"mapZoom\":7},\"P-25\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-27\":{\"vis\":{\"legendOpen\":false}},\"P-29\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"P-30\":{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(165,0,38)\",\"1 - 2\":\"rgb(249,142,82)\",\"2 - 3\":\"rgb(255,255,190)\",\"3 - 4\":\"rgb(135,203,103)\",\"4 - 5\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
