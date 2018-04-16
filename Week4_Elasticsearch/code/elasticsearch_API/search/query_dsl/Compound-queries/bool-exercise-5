@@ -1,0 +1,50 @@
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "고객나이": {
+                    "gte": 27,
+                    "lte": 35
+                  }
+                }
+              },
+              {
+                "wildcard": {
+                  "고객주소_시도": {
+                    "value": "경??"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              {
+                "term": {
+                  "결제카드": {
+                    "value": "시티"
+                  }
+                }
+              }
+            ],
+            "must_not": [
+              {
+                "script": {
+                  "script": "doc['주문시간'].date.hourOfDay > 18"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
