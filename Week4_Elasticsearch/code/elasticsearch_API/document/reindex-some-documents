@@ -1,0 +1,16 @@
+POST _reindex
+{
+  "source": {
+    "index": "week4_higee",
+    "type" : "week4_higee",
+    "query": {
+      "term": {
+        "age": 19
+      }
+    }
+  },
+  "dest": {
+    "index": "week4_higee_reindex2"
+  }
+}
+
