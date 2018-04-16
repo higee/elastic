@@ -1,0 +1,24 @@
+GET nested/_search
+{
+  "query": {
+    "nested": {
+      "path": "상품",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match" : {
+                "상품.구매사이트" : "11번가"
+              }
+            },
+            {
+              "match" : {
+                "상품.분류" : "팬츠"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}   
