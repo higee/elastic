@@ -1,0 +1,10 @@
+POST _reindex
+{
+  "source": {
+    "index": "week4_higee"
+  },
+  "dest": {
+    "index": "week4_higee_reindex"
+  }
+}
+
