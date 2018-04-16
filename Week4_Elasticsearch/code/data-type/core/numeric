@@ -1,0 +1,17 @@
+PUT my_index
+{
+  "mappings": {
+    "my_type": {
+      "properties": {
+        "test": {
+          "type": "byte"
+        }
+      }
+    }
+  }
+}
+
+POST my_index/my_type
+{
+  "test" : 129
+}
