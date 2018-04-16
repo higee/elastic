@@ -1,0 +1,23 @@
+POST week4_higee/week4_higee/_update_by_query
+{
+  "script": {
+    "source": "ctx._source['age'] = 50"
+  },
+  "query": {
+    "term": {
+      "age": 33
+    }
+  }
+}
+
+POST week4_higee/week4_higee/_update_by_query
+{
+  "script": {
+    "source": "ctx._source.age = 70"
+  },
+  "query": {
+    "term": {
+      "age": 50
+    }
+  }
+}
