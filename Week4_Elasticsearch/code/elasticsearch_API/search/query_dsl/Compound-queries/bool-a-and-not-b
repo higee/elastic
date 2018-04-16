@@ -1,0 +1,13 @@
+GET shopping/shopping/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "고객주소_시도": "서울특별시" }}
+      ],
+      "must_not": [
+        { "wildcard": { "구매사이트" : "11*"}}
+      ]
+    }
+  }
+}
