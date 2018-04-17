@@ -73,7 +73,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 ```
 $ sudo yum install git -y
 $ git clone -b class3 https://github.com/higee/elastic.git
-$ cd elastic/Week4_Elasticsearch/code/docker
+$ cd elastic/Week4_Elasticsearch/code/install
 ```
 
 <a name='elastic'></a>
