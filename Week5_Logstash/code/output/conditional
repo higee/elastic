@@ -1,0 +1,23 @@
+input {                                                                                    
+  stdin {}                                                                               
+}                                                                         
+
+output {                                     
+  if [message] in [“Seoul", "Busan"] {                                                                            
+    elasticsearch {                          
+      hosts => ["elasticsearch:9200"]        
+      index => "korea"                       
+    }                                        
+  }                                          
+  else if [message] == "Osaka" {              
+    elasticsearch {                            
+      hosts => ["elasticsearch:9200"]        
+      index => "japan"                       
+    }                                        
+  }                                          
+  else {                                     
+    stdout {                                   
+      codec => rubydebug                     
+    }                                          
+  }                                          
+}                                             
