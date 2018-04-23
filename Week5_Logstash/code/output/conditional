@@ -3,7 +3,7 @@ input {
 }                                                                         
 
 output {                                     
-  if [message] in [“Seoul", "Busan"] {                                                                            
+  if [message] in ["Seoul", "Busan"] {                                                                            
     elasticsearch {                          
       hosts => ["elasticsearch:9200"]        
       index => "korea"                       
