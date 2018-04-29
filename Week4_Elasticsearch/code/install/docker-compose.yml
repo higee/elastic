@@ -39,6 +39,7 @@ services:
     volumes:
       - ../../driver:/usr/share/logstash/driver
       - ../../data:/usr/share/logstash/data
+      - ../../../Week5_Logstash/code:/usr/share/logstash/code
     tty: true
     restart: always
     entrypoint: ["/bin/bash"]
