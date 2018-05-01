@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "AWMZazwAM1Y275YfvABT",
+    "_type": "visualization",
+    "_source": {
+      "title": "heatmap",
+      "visState": "{\"title\":\"heatmap\",\"type\":\"heatmap\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"colorsNumber\":4,\"colorsRange\":[],\"enableHover\":false,\"invertColors\":false,\"legendPosition\":\"right\",\"percentageMode\":false,\"setColorRange\":false,\"times\":[],\"type\":\"heatmap\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"color\":\"#555\",\"rotate\":0,\"show\":false},\"scale\":{\"defaultYExtents\":false,\"type\":\"linear\"},\"show\":false,\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dayofweek\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"요일\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"hourofday\",\"size\":10,\"orderAgg\":{\"id\":\"3-orderAgg\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"hourofday_sort\"}},\"order\":\"asc\",\"orderBy\":\"custom\",\"customLabel\":\"시간대\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 875\":\"rgb(255,255,204)\",\"875 - 1,750\":\"rgb(254,217,118)\",\"1,750 - 2,625\":\"rgb(253,141,60)\",\"2,625 - 3,500\":\"rgb(227,27,28)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWMZQD5HM1Y275Yfu1iW\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
