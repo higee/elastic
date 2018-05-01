@@ -1,0 +1,1 @@
+if (doc['date_order'].date.hourOfDay < 5) { return "새벽" } else if (doc['date_order'].date.hourOfDay < 10) { return "아침" } else if (doc['date_order'].date.hourOfDay < 13) { return "점심" } else if (doc['date_order'].date.hourOfDay < 17) { return "오후" } else if (doc['date_order'].date.hourOfDay < 20) { return "저녁" } else { return "밤" }
