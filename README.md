@@ -105,7 +105,11 @@ $ docker-compose up -d
 $ bin/logstash -f code/input/file/file-sincedb-path.conf
 ```
 
-#### 8. 혹시 x-pack enabled해서 사용할 경우 default username 및 password는 아래와 같다
+#### 8. Kibana 접속
+* 예를 들어 ip 주소가 12.345.678.123인 경우 : `http://12.345.678.123:5601`
+* docker-compose에서 port를 변경해주면 `80번` 혹은 `443번` 포트 등을 사용할 수 있다
+
+#### 9. 혹시 x-pack enabled해서 사용할 경우 default username 및 password는 아래와 같다
 ```
 id : elastic
 pwd : changeme
