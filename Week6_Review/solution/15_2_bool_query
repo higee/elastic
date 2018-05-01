@@ -1,0 +1,71 @@
+GET exercise/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {
+          "bool": {
+            "must": [
+              {
+                "term": {
+                  "customer_location": {
+                    "value": "서울특별시"
+                  }
+                }
+              },
+              {
+                "term": {
+                  "customer_sex": {
+                    "value": "남성"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "customer_age": {
+                    "lte": 35
+                  }
+                }
+              },
+              {
+                "term": {
+                  "customer_location": {
+                    "value": "부산특별시"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "must": [
+              {
+                "range": {
+                  "seller_rating": {
+                    "gte": 2,
+                    "lte": 4
+                  }
+                }
+              },
+              {
+                "prefix": {
+                  "customer_location": {
+                    "value": "충청"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
