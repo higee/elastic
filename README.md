@@ -29,6 +29,7 @@
     | Custom TCP      | TCP | 9300 | Custom 0.0.0.0/0 | elasticsearch node communication
     | Custom TCP      | TCP | 5601 | Custom 0.0.0.0/0 | kibana
 
+<a name='ec2'></a>
 #### 1. AWS EC2 접속
 
 * Mac OS
