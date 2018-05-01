@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "AWMZhU6zM1Y275YfvAex",
+    "_type": "visualization",
+    "_source": {
+      "title": "line",
+      "visState": "{\"title\":\"line\",\"type\":\"line\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"날짜\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Overall Sum of Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"normal\",\"data\":{\"label\":\"탑2\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"워스트2\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"line\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"1-bucket\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"seller_site\",\"size\":2,\"orderAgg\":{\"id\":\"1-bucket-orderAgg\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"product_price\"}},\"order\":\"desc\",\"orderBy\":\"custom\",\"customLabel\":\"\"}},\"customMetric\":{\"id\":\"1-metric\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metricAgg\",\"params\":{}},\"customLabel\":\"탑2\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"date_delivery\",\"interval\":\"d\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"날짜\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"sum_bucket\",\"schema\":\"metric\",\"params\":{\"customBucket\":{\"id\":\"3-bucket\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucketAgg\",\"params\":{\"field\":\"seller_site\",\"size\":2,\"orderAgg\":{\"id\":\"3-bucket-orderAgg\",\"enabled\":true,\"type\":\"sum\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"product_price\"}},\"order\":\"asc\",\"orderBy\":\"custom\",\"customLabel\":\"\"}},\"customMetric\":{\"id\":\"3-metric\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metricAgg\",\"params\":{}},\"customLabel\":\"워스트2\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"워스트2\":\"#6ED0E0\",\"탑2\":\"#EF843C\"},\"legendOpen\":false}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWMZQD5HM1Y275Yfu1iW\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
