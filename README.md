@@ -91,7 +91,7 @@ $ cd elastic/Week4_Elasticsearch/code/install
 $ docker-compose up 
 ```
 
-* 혹은 detach mode로 실행
+* 혹은 detached mode로 실행
 ```
 $ docker-compose up -d
 ```
