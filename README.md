@@ -3,7 +3,8 @@
 
 #### 안내
 
-* 이 repository는 지속적으로 업데이트가 진행됩니다. (`<>Code`, `Issues`, `Wiki`)
+* 이 repository는 지속적으로 업데이트가 진행된다. (`<>Code`, `Issues`, `Wiki`)
+* `branch`는 [Fast Campus](http://www.fastcampus.co.kr/data_camp_dsbd/) 강의 기수에 맞춰져 있다.
 * repository 요소별 안내
     * `Code` : Elastic Stack 흐름에 관한 전반적인 설명
     * `Issues` : 자주 들어온 질문 정리
