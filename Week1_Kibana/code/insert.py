@@ -5,8 +5,9 @@ import struct
 import random
 import datetime
 
-from fake import fake_data
 from elasticsearch import Elasticsearch
+
+from fake import fake_data
 from es_conf import properties
 
 def main():
