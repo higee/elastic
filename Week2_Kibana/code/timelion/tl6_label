@@ -1,12 +1,15 @@
-#readable code
+# readable code
 .es(
-  index=test2_2018.03.01, 
-  timefield=주문시간
-).label(test), 
+  index=nginx-*, 
+  timefield=@timestamp,
+  metric=avg:nginx.access.body_sent.bytes
+).color(#00b8ff).label(nginx), 
+
 .es(
   index=shopping, 
-  timefield=주문시간
-).label(shopping)
+  timefield=주문시간,
+  metric=sum:상품가격
+).color(#fd8282).label(shopping)
 
-#timelion code
-.es(index=test2_2018.03.01, timefield=주문시간).label(test), .es(index=shopping, timefield=주문시간).label(shopping)
+# timelion code
+.es(index=nginx-*, timefield=@timestamp, metric=avg:nginx.access.body_sent.bytes).color(#00b8ff).label(nginx), .es(index=shopping, timefield=주문시간, metric=sum:상품가격).color(#fd8282).label(shopping)
