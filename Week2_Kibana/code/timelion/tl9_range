@@ -1,0 +1,10 @@
+# redable code
+.es(
+  index=nginx-*,
+  timefield=@timestamp,
+  metric=count,
+  q=nginx.access.response_code:200
+).label(에러).range(0, 1)
+
+# timelion code
+.es(index=nginx-*, timefield=@timestamp, metric=count, q=nginx.access.response_code:200).label(에러).range(0, 1)
