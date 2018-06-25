@@ -1,8 +1,8 @@
 # readable code
 .es(
-  index=shopping, 
-  timefield=주문시간
+  index=nginx-*, 
+  timefield=@timestamp
 )
 
-# timelion
-.es(index=shopping, timefield=주문시간)
+# timelion code
+.es(index=nginx-*, timefield=@timestamp)
