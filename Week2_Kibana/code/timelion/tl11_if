@@ -1,0 +1,17 @@
+# readable code
+.es(
+  index=nginx-*, 
+  timefield=@timestamp, 
+  metric=count
+).if(
+    gte, 
+    50, 
+    .es(
+      index=nginx-*,
+      timefield=@timestamp, 
+      metric=count), 
+    null
+)
+    
+# timelion code
+.es(index=nginx-*, timefield=@timestamp, metric=count).if(gte, 50, .es(index=nginx-*, timefield=@timestamp, metric=count), null)
