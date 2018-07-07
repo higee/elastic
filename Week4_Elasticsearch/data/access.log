@@ -1,4 +1,0 @@
-2018-02-05T05:49:53.859060Z 172.30.39.133 0.079 200 "GET https://helloworld.com/users/1 HTTP/1.1"
-2018-02-05T06:49:53.859060Z 172.29.43.253 0.1 404 "GET https://helloworld.com/users/3 HTTP/1.1"
-2018-02-05T07:49:53.859060Z 172.30.40.210 0.052 503 "GET https://helloworld.com/users/2 HTTP/1.1"
-2018-02-05T08:49:53.859060Z 172.31.40.131 0.038 200 "POST https://helloworld.com/users/5 HTTP/1.1"
