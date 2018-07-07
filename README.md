@@ -40,7 +40,7 @@
     ```
     $ cd ~
     $ chmod 400 elastic_camp.pem
-    $ ssh -i "elastic_camp.pem" ec2-user@ec2-12-345-678-123.ap-northeast-2.compute.amazonaws.com
+    $ ssh -i "elastic_camp.pem" ec2-user@12.345.678.123
     ```
 * Windows : [클릭](https://github.com/higee/elastic/wiki/AWS-EC2-Instance-%EC%83%9D%EC%84%B1-%EB%B0%8F-%EC%A0%91%EC%86%8D#connect-windows)
 
@@ -82,11 +82,16 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 ```
 $ sudo yum install git -y
-$ git clone -b class3 https://github.com/higee/elastic.git
-$ cd elastic/Week4_Elasticsearch/code/install
+$ git clone -b class4 https://github.com/higee/elastic.git
+$ cd /home/ec2-user/elastic/Install/config
 ```
 
-#### 6. elastic stack 실행
+#### 6. 파일 소유권 변환
+```
+$ sudo chown -R 1000:1000 /home/ec2-user/elastic/
+```
+
+#### 7. elastic stack 실행
 * 다운 받은 docker-compose.yml에 설치 및 실행에 필요한 모든 정보가 들어있다.
 * 수업 후에 환경에 맞게 customize하고 우선은 default 상태로 실행하자
 
@@ -99,24 +104,20 @@ $ docker-compose up
 $ docker-compose up -d
 ```
 
-#### 7. logstash 실행
-* logstash container를 root로 실행 : `$ docker exec -u 0 -it logstash bash`
+#### 8. logstash 실행
+* logstash container  실행 : `$ docker exec -it logstash bash`
+* (permission error 생길 경우 root로 실행 : `$ docker exec -u 0 -it logstash bash`)
 * logstash 실행 (편의상 configuraiton 파일도 모두 volume 형태로 mount 해두었다)
-* 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class3/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
+* 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class4/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
 * 예를 들어 아래와 같이 하면 파일 데이터를 수집하는 logstash를 실행한다 
 ```
 $ bin/logstash -f code/input/file/file-sincedb-path.conf
 ```
 
-#### 8. Kibana 접속
+#### 9. Kibana 접속
 * 예를 들어 ip 주소가 12.345.678.123인 경우 : `http://12.345.678.123:5601`
 * docker-compose에서 port를 변경해주면 `80번` 혹은 `443번` 포트 등을 사용할 수 있다
 
-#### 9. 혹시 x-pack enabled해서 사용할 경우 default username 및 password는 아래와 같다
-```
-id : elastic
-pwd : changeme
-```
 ---
 
 #### 기타
