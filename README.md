@@ -106,13 +106,14 @@ $ docker-compose up -d
 
 #### 8. logstash 실행
 * logstash container  실행 : `$ docker exec -it logstash bash`
-* (permission error 생길 경우 root로 실행 : `$ docker exec -u 0 -it logstash bash`)
-* logstash 실행 (편의상 configuraiton 파일도 모두 volume 형태로 mount 해두었다)
-* 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class4/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
-* 예를 들어 아래와 같이 하면 파일 데이터를 수집하는 logstash를 실행한다 
-```
-$ bin/logstash -f code/input/file/file-sincedb-path.conf
-```
+    * (permission error 생길 경우 root로 실행 : `$ docker exec -u 0 -it logstash bash`)
+* logstash 실행 
+    * 편의상 configuraiton 파일도 모두 volume 형태로 mount 해두었다
+    * 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class4/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
+    * 예를 들어 아래와 같이 하면 파일 데이터를 수집하는 logstash를 실행한다 
+    ```
+    $ bin/logstash -f code/input/file/file-sincedb-path.conf
+    ```
 
 #### 9. Kibana 접속
 * 예를 들어 ip 주소가 12.345.678.123인 경우 : `http://12.345.678.123:5601`
