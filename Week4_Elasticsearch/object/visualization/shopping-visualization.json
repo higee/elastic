@@ -14,20 +14,6 @@
     }
   },
   {
-    "_id": "AWJdhp4tzMQVnr-9MxxP",
-    "_type": "visualization",
-    "_source": {
-      "title": "[shopping] Heat Map",
-      "visState": "{\"title\":\"[shopping] Heat Map\",\"type\":\"heatmap\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"colorsNumber\":4,\"colorsRange\":[],\"enableHover\":false,\"invertColors\":false,\"legendPosition\":\"right\",\"percentageMode\":false,\"setColorRange\":false,\"times\":[],\"type\":\"heatmap\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"color\":\"#555\",\"rotate\":0,\"show\":false},\"scale\":{\"defaultYExtents\":false,\"type\":\"linear\"},\"show\":false,\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"주문시간_요일\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":7,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"max\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"주문시간_요일_sort\"}},\"order\":\"asc\",\"orderBy\":\"custom\",\"customLabel\":\"주문요일\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"주문시간_시간대\",\"ranges\":[{\"from\":19,\"to\":23},{\"from\":15,\"to\":19},{\"from\":11,\"to\":15},{\"from\":7,\"to\":11},{\"from\":0,\"to\":7}],\"customLabel\":\"시간대\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 3\":\"rgb(255,255,204)\",\"3 - 6\":\"rgb(254,217,118)\",\"6 - 9\":\"rgb(253,141,60)\",\"9 - 12\":\"rgb(227,27,28)\"}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"f3ef69f0-6fa9-11e8-8161-3b4280559eb3\",\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
-      }
-    }
-  },
-  {
     "_id": "AWJguWqpzMQVnr-9Mxxg",
     "_type": "visualization",
     "_source": {
@@ -192,6 +178,20 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"query\":{\"query\":{\"match_all\":{}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "147d34a0-82c8-11e8-8161-3b4280559eb3",
+    "_type": "visualization",
+    "_source": {
+      "title": "[shopping] Heat Map",
+      "visState": "{\"aggs\":[{\"enabled\":true,\"id\":\"1\",\"params\":{},\"schema\":\"metric\",\"type\":\"count\"},{\"enabled\":true,\"id\":\"2\",\"params\":{\"customLabel\":\"요일\",\"field\":\"주문시간_요일\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"size\":7},\"schema\":\"segment\",\"type\":\"terms\"},{\"enabled\":true,\"id\":\"3\",\"params\":{\"customLabel\":\"시간\",\"field\":\"주문시간_시간대\",\"ranges\":[{\"from\":0,\"to\":7},{\"from\":7,\"to\":11},{\"from\":11,\"to\":15},{\"from\":15,\"to\":19},{\"from\":19,\"to\":23}]},\"schema\":\"group\",\"type\":\"range\"}],\"params\":{\"addLegend\":true,\"addTooltip\":true,\"colorSchema\":\"Yellow to Red\",\"colorsNumber\":4,\"colorsRange\":[],\"enableHover\":false,\"invertColors\":false,\"legendPosition\":\"right\",\"percentageMode\":false,\"setColorRange\":false,\"times\":[],\"type\":\"heatmap\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"color\":\"#555\",\"rotate\":0,\"show\":false},\"scale\":{\"defaultYExtents\":false,\"type\":\"linear\"},\"show\":false,\"type\":\"value\"}]},\"title\":\"[shopping] Heat Map\",\"type\":\"heatmap\"}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 55\":\"rgb(255,255,204)\",\"55 - 110\":\"rgb(254,217,118)\",\"110 - 165\":\"rgb(253,141,60)\",\"165 - 220\":\"rgb(227,27,28)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f3ef69f0-6fa9-11e8-8161-3b4280559eb3\",\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":\"\"}}"
       }
     }
   }
