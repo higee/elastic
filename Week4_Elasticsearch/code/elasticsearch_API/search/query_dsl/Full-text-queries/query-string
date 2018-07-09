@@ -11,7 +11,17 @@ GET /shopping/_search
 {
   "query": {
     "query_string": {
-      "query": "고객나이 : [10 TO 25] OR 쿠팡",
+      "query": "고객나이 : [10 TO 25] AND 쿠팡",
+    }
+  }
+}
+
+GET /shopping/_search
+{
+  "query": {
+    "query_string": {
+      "query": "+고객나이 : [10 TO 25] +구매사이트: 쿠팡",
+      "analyze_wildcard": true
     }
   }
 }
