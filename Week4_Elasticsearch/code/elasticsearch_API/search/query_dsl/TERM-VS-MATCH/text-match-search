@@ -1,0 +1,35 @@
+GET ml/_search
+{
+  "query": {
+    "match": {
+      "text": "machine"
+    }
+  }
+}
+
+GET ml/_search
+{
+  "query": {
+    "match": {
+      "text": "Machine"
+    }
+  }
+}
+
+GET ml/_search
+{
+  "query": {
+    "match": {
+      "text": "machine learning"
+    }
+  }
+}
+
+GET ml/_search
+{
+  "query": {
+    "match": {
+      "text": "Machine Learning"
+    }
+  }
+}
