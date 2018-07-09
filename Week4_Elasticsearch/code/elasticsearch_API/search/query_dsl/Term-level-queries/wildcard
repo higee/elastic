@@ -1,0 +1,19 @@
+# wildcard : *
+GET /shopping/_search
+{
+  "query": {
+    "wildcard" : { 
+      "고객주소_시도" : "경*도" 
+    }
+  }
+}
+
+# wildcard : ?
+GET shopping/_search
+{
+  "query": {
+    "wildcard" : {
+      "고객주소_시도" : "경?도"
+    }
+  }
+}
