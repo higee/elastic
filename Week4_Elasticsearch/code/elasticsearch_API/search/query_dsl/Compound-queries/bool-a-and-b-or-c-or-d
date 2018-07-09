@@ -6,7 +6,7 @@ GET /shopping/_search
         { "term": { "고객주소_시도": "서울특별시" }}
       ], 
       "should": [
-        { "wildcard": { "구매사이트" : "11*"}},
+        { "prefix": { "구매사이트" : "11"}},
         { "range": { "고객나이": { "lt": 30}}},
         { "script": { "script" : { "source" : "Instant.ofEpochMilli(doc['주문시간'].value.millis).atZone(ZoneId.of('Asia/Seoul')).hour > 15"}}}
       ],
