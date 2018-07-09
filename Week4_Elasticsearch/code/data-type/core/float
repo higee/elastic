@@ -32,7 +32,7 @@ POST my_index/my_type
   "test-half-float" : 3.11111122222
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query" : {
     "range": {
@@ -44,7 +44,7 @@ GET my_index/_search
   }
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query" : {
     "range": {
@@ -56,14 +56,14 @@ GET my_index/_search
   }
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query": {
     "match_all": {}
   }
 }
 
-GET my_index/_search
+GET /my_index/_search
 { 
   "query": {
     "match_all": {}
