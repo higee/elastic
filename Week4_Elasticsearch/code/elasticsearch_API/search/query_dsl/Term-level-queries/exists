@@ -1,4 +1,4 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query": {
     "exists" : { 
@@ -6,4 +6,3 @@ GET shopping/shopping/_search
     }
   }
 }
-
