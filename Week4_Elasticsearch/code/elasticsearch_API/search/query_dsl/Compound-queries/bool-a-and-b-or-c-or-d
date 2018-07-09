@@ -1,4 +1,4 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query": {
     "bool": {
@@ -8,7 +8,7 @@ GET shopping/shopping/_search
       "should": [
         { "wildcard": { "구매사이트" : "11*"}},
         { "range": { "고객나이": { "lt": 30}}},
-        { "script": { "script" : { "source" : "doc['주문시간'].date.dayOfWeek == 7", "lang": "painless"}}}
+        { "script": { "script" : { "source" : "Instant.ofEpochMilli(doc['주문시간'].value.millis).atZone(ZoneId.of('Asia/Seoul')).hour > 15", "lang": "painless"}}}
       ],
       "minimum_should_match": 2
     }
