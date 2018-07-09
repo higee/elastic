@@ -1,4 +1,4 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query" : {
     "query_string" : {
@@ -6,4 +6,3 @@ GET shopping/shopping/_search
     }
   }
 }
-
