@@ -1,11 +1,21 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query": {
     "fuzzy" : {
-      "고객주소_시도" : {
-        "value" : "경상북남"
-      }
+      "고객주소_시도" : "경상북남"
     }
   }
 }
 
+# parameters 
+GET /shopping/_search
+{
+  "query": {
+    "fuzzy" : {
+      "고객주소_시도" : {
+        "value" : "경상북남",
+        "fuzziness": 2
+      }
+    }
+  }
+}
