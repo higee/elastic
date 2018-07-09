@@ -6,3 +6,12 @@ GET /shopping/_search
     }
   }
 }
+
+GET /shopping/_search
+{
+  "query": {
+    "query_string": {
+      "query": "고객나이 : [10 TO 25] OR 쿠팡",
+    }
+  }
+}
