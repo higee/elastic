@@ -1,0 +1,5 @@
+POST ml/doc
+{
+  "keyword" : "Machine Learning",
+  "text" : "Machine Learning"
+}
