@@ -1,4 +1,4 @@
-GET shopping/_search
+GET /shopping/_search
 {
   "query" : {
     "match_all" : {}
