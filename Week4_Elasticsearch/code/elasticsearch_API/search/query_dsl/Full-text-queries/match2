@@ -1,8 +1,0 @@
-GET shopping/shopping/_search
-{
-  "query": {
-    "match": {
-      "배송메모": "시간 못함"
-    }
-  }
-}
