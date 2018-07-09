@@ -1,12 +1,12 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query": {
     "bool": {
       "must": [
-        { "term": { "고객주소_시도": "서울특별시" }}
+        { "term": { "고객주소_시도": "서울특별시"}}
       ], 
       "should": [
-        { "wildcard": { "구매사이트" : "11*"}},
+        { "prefix": { "구매사이트" : "11"}},
         { "range": { "고객나이": { "lt": 30}}}
       ],
       "minimum_should_match": 1
