@@ -1,10 +1,12 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
-  "query": {
-    "script": {
-      "script": {
-        "source": "doc['주문시간'].date.hourOfDay > 15 ",
-        "lang": "painless"
+  "query" : {
+    "script" : {
+      "script" : {
+        "source" :
+          """Instant.ofEpochMilli(doc['주문시간'].value.millis)
+          .atZone(ZoneId.of('Asia/Seoul')).hour > 10""",
+        "lang" : "painless"
       }
     }
   }
