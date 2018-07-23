@@ -1,0 +1,59 @@
+input {
+  elasticsearch {
+    hosts => ["elasticsearch:9200"]
+    index => "chicago-*"
+    query => '{
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "term": {
+                "tags": {
+                  "value": "VIP"
+                }
+              }
+            },
+            {
+              "term": {
+                "gender": {
+                  "value": "Female"
+                }
+              }
+            },
+            {
+              "range" : {
+                "dpcapacity_end" : {
+                  "gte" : 10,
+                  "lt" : 12
+                }
+              }
+            }
+          ],
+          "must_not" : [
+            {
+              "term" : {
+                "events" : {
+                  "value" : "cloudy"
+                }
+              }                
+            }          
+          ]                  
+        }          
+      },
+      "sort": [
+        {
+          "tripduration": {
+            "order": "desc"
+          }                  
+        }         
+      ]
+    }'
+  }
+}
+
+output {
+  csv {
+    fields => ["starttime", "stoptime", "tripduration"]
+    path => "/usr/share/logstash/data/chicago.csv"          
+  }
+}
