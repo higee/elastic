@@ -1,0 +1,76 @@
+PUT _template/chicago
+{
+  "index_patterns": "chicago-*",
+  "mappings": {
+    "chicago": {
+      "properties": {
+        "starttime": {
+          "type": "date"
+        },
+        "stoptime": {
+          "type": "date"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "month": {
+          "type": "integer"
+        },
+        "week": {
+          "type": "integer"
+        },
+        "day": {
+          "type": "integer"
+        },
+        "hour": {
+          "type": "integer"
+        },
+        "from_station_name": {
+          "type": "keyword"
+        },
+        "from_station_id": {
+          "type": "keyword"
+        },
+        "to_station_name": {
+          "type": "keyword"
+        },
+        "to_station_id": {
+          "type": "keyword"
+        },
+        "start_gps": {
+          "type": "geo_point"
+        },
+        "end_gps": {
+          "type": "geo_point"
+        },
+        "dpcapacity_start": {
+          "type": "integer"
+        },
+        "dpcapacity_end": {
+          "type": "integer"
+        },
+        "temperature": {
+          "type": "float"
+        },
+        "events": {
+          "type": "keyword"
+        },
+        "gender": {
+          "type": "keyword"
+        },
+        "trip_id": {
+          "type": "keyword"
+        },
+        "usertype": {
+          "type": "keyword"
+        },
+        "tags" : {
+          "type": "keyword"
+        },
+        "tripduration": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}      
