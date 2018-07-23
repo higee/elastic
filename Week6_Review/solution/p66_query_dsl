@@ -1,0 +1,43 @@
+GET chicago*/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "prefix": {
+            "to_station_name": {
+              "value": "Cli"
+            }
+          }
+        }
+      ],
+      "must_not": [
+        {
+          "term": {
+            "from_station_id": {
+              "value": "313"
+            }
+          }
+        }
+      ],
+      "should": [
+        {
+          "term": {
+            "events": {
+              "value": "clear"
+            }
+          }
+        },
+        {
+          "range": {
+            "dpcapacity_end": {
+              "gte": 30,
+              "lte": 40
+            }
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
