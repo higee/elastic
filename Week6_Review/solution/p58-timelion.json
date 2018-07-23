@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "741ee020-8eb7-11e8-bf09-e9fa0893099a",
+    "_type": "visualization",
+    "_source": {
+      "title": "exercise3 - timelion",
+      "visState": "{\"title\":\"exercise3 - timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=chicago*, timefield=starttime, metric=sum:tripduration).label(현재), .es(index=chicago*, timefield=starttime, metric=sum:tripduration, offset=-1d).label(전월)\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  }
+]
