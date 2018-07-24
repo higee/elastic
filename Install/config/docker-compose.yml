@@ -8,7 +8,7 @@ services:
     environment:
       http.host: '0.0.0.0'
       network.host: '127.0.0.1'
-      ES_JAVA_OPTS: '-Xms256m -Xmx256m -XX:-AssumeMP'
+      ES_JAVA_OPTS: '-Xms1g -Xmx1g -XX:-AssumeMP'
       bootstrap.memory_lock: 'true'
     ulimits:
       memlock:
@@ -28,7 +28,7 @@ services:
     image: docker.elastic.co/logstash/logstash-oss:6.2.4
     container_name: logstash
     environment:
-        JAVA_OPTS: '-Xms128m -Xmx128m -XX:-AssumeMP'
+        JAVA_OPTS: '-Xms512m -Xmx512m -XX:-AssumeMP'
     depends_on: ['elasticsearch']
     volumes:
       - ../driver:/usr/share/logstash/driver
