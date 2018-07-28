@@ -20,7 +20,7 @@ POST my_index/my_type
   "test-text" : "패스트캠퍼스 엘라스틱서치"
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query": {
     "term": {
@@ -29,7 +29,7 @@ GET my_index/_search
   }
 }
 
-GET my_index/_search
+GET /my_index/_search
 {
   "query": {
     "term": {

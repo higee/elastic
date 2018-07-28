@@ -23,24 +23,14 @@ def fake_data(es, name, n):
         order = i
 
         # 접수시간
-        year = random.choice(range(2018, 2019))
-        if year == 2017:
-            month = random.choices(range(1, 13), weights=probs_month, k=1)[0]
-            if month in [1, 3, 5, 7, 8, 10, 12]: 
-                day = random.choice(range(1, 32))
-            elif month in [4, 6, 9, 11]:
-                day = random.choice(range(1, 31))
-            elif month == 2:
-                day = random.choice(range(1, 28))
-
-        else: 
-            month = random.choice(range(1, 4))
-            if month in [1, 5, 7, 8, 10, 12]: 
-                day = random.choice(range(1, 32))
-            elif month in [4, 6, 9, 11]:
-                day = random.choice(range(1, 31))
-            elif month in [2, 3]:
-                day = random.choice(range(1, 28))
+        year = random.choice(range(2017, 2019))
+        month = random.choices(range(1, 13), weights=probs_month, k=1)[0]
+        if month in [1, 3, 5, 7, 8, 10, 12]: 
+            day = random.choice(range(1, 32))
+        elif month in [4, 6, 9, 11]:
+            day = random.choice(range(1, 31))
+        elif month == 2:
+            day = random.choice(range(1, 29))
 
         hour = random.choice(range(0, 24))
         minute = random.choice(range(0, 60))

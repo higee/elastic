@@ -1,9 +1,0 @@
-GET shopping/shopping/_search
-{
-  "query": {
-    "wildcard" : { 
-      "고객주소_시도" : "경*도" 
-    }
-  }
-}
-

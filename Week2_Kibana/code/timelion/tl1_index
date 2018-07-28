@@ -1,1 +1,2 @@
-.es(index=shopping)
+# timelion code
+.es(index=nginx-*)

@@ -1,4 +1,4 @@
-GET {Index 이름}/{Type 이름}/_search
+GET /shopping/_search
 {
   "query": {
     "bool": {

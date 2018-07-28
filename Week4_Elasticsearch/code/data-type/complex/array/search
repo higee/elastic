@@ -1,4 +1,4 @@
-GET array/_search
+GET /array/_search
 {
   "query": {
     "bool": {

@@ -1,0 +1,8 @@
+# option 1
+LocalDateTime.ofInstant(Instant.ofEpochMilli(doc['주문시간'].value.millis), ZoneId.of('Asia/Seoul')).getHour()	
+
+# option 2
+ZonedDateTime.ofInstant(Instant.ofEpochMilli(doc['주문시간'].value.millis), ZoneId.of('Asia/Seoul')).getHour()	
+
+# option 3
+Instant.ofEpochMilli(doc['주문시간'].date.millis).atZone(ZoneId.of("Asia/Seoul")).hour

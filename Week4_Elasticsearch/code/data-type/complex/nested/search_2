@@ -1,4 +1,4 @@
-GET nested/_search
+GET /nested/_search
 {
   "query": {
     "nested": {

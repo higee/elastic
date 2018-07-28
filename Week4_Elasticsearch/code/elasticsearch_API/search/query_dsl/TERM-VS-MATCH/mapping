@@ -1,0 +1,15 @@
+PUT ml
+{
+  "mappings": {
+    "doc": {
+      "properties": {
+        "keyword" : {
+          "type": "keyword"
+        },
+        "text" : {
+          "type": "text"
+        }
+      }
+    }
+  }
+}

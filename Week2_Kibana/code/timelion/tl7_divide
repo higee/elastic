@@ -1,16 +1,15 @@
 # readable code
 .es(
-  index=shopping, 
-  timefield=주문시간, 
-  q=고객성별:여성
+  index=nginx-*, 
+  timefield=@timestamp,
+  q=-nginx.access.response_code:200
 ).divide(
-   .es(
-     index=shopping, 
-     timefield=주문시간, 
-     q=고객성별:남성
-   )
+  .es(
+    index=nginx-*,
+    timefield=@timestamp,
+    metric=count
+  )
 ).label(성비)
 
 # timelion code
-.es(index=shopping, timefield=주문시간, q=고객성별:여성).divide(.es(index=shopping, timefield=주문시간, q=고객성별:남성)).label(성비)
-
+.es(index=nginx-*, timefield=@timestamp, q=-nginx.access.response_code:200).divide(.es(index=nginx-*, timefield=@timestamp, metric=count)).label(에러비율)

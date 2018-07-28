@@ -1,4 +1,4 @@
-GET shopping/shopping/_search
+GET /shopping/_search
 {
   "query": {
     "range": {
@@ -8,4 +8,3 @@ GET shopping/shopping/_search
     }
   }
 }
-

@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "de77bd70-6f31-11e8-a0fb-51f0eb991705",
+    "_type": "search",
+    "_source": {
+      "title": "[nginx] search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "nginx.access.url",
+        "nginx.access.response_code",
+        "nginx.access.body_sent.bytes"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"eb4d54b0-6fa9-11e8-8161-3b4280559eb3\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+      }
+    }
+  }
+]

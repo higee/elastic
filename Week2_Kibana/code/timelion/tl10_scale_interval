@@ -1,0 +1,9 @@
+# redable code
+.es(
+  index=nginx-*, 
+  timefield=@timestamp, 
+  metric=count
+).scale_interval(1m)
+
+# timelion code
+.es(index=nginx-*, timefield=@timestamp, metric=count).scale_interval(1m)

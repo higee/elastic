@@ -1,4 +1,13 @@
-GET shopping/_search
+# type 명시
+GET /shopping/shopping/_search
+{
+  "query" : {
+    "match_all" : {}
+  }
+}
+
+# type 생략
+GET /shopping/_search
 {
   "query" : {
     "match_all" : {}
