@@ -20,4 +20,4 @@
 ).label(50이상)
 
 # timelion code
-.es(index=nginx-*, timefield=@timestamp, metric=count).label(50이하), .es(index=nginx-*, timefield=@timestamp, metric=count).if(gte, 50, .es(index=nginx-*, timefield=@timestamp, metric=count), null).label(50이상) 
+.es(index=nginx-*, timefield=@timestamp, metric=count).label(50이하), .es(index=nginx-*, timefield=@timestamp, metric=count).if(gte, 50, .es(index=nginx-*, timefield=@timestamp, metric=count), null).label(50이상)
