@@ -1,0 +1,1 @@
+Instant.ofEpochMilli(doc['주문시간'].date.millis).atZone(ZoneId.of("Asia/Seoul")).dayOfWeek.getValue()
