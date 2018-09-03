@@ -1,0 +1,47 @@
+# exercise2-without-mapping index 생성
+PUT exercise2-without-mapping
+
+# 다음과 같은 Document 생성 (type 이름 : exercise2)
+POST exercise2-without-mapping/exercise2
+{
+  "name" : "elastic stack",
+  "major_version" : 6,
+  "version" : "6.2.4"
+}
+
+# exercise2-without-mapping index의 mapping 확인
+GET exercise2-without-mapping/_mapping
+
+# index 이름이 exercise2-with-mapping, type 이름이 exercise2인 index를 만들면서 아래와 같은 mapping 생성
+PUT exercise2-with-mapping
+{
+  "mappings": {
+    "exercise2": {
+      "properties": {
+        "name": {
+          "type": "keyword"
+        },
+        "major_version": {
+          "type": "byte"
+        },
+        "version": {
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
+
+# exercise2-without-mapping (source)를 exercise2-with-mapping (destination)로 재색인
+POST _reindex
+{
+  "source": {
+    "index": "exercise2-without-mapping"
+  },
+  "dest": {
+    "index": "exercise2-with-mapping"
+  }
+}
+
+# exercise2-with-mapping의 mapping 확인
+GET exercise2-with-mapping
