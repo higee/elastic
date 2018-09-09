@@ -1,0 +1,10 @@
+{
+  "size": 1,
+  "sort" : [ { "@timestamp" : "desc" } ],
+  "_source" : ["@timestamp"],
+  "query": {
+    "term": {
+      "nginx.access.geoip.ip" : "%{[clientip]}"
+    }
+  }
+}
