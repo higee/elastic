@@ -10,6 +10,7 @@ services:
       network.host: '127.0.0.1'
       ES_JAVA_OPTS: '-Xms2g -Xmx2g -XX:-AssumeMP'
       bootstrap.memory_lock: 'true'
+      reindex.remote.whitelist: "elasticsearch.higee.co:80"
     ulimits:
       memlock:
         soft: -1
