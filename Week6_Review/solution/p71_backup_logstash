@@ -1,0 +1,13 @@
+input {
+  elasticsearch {
+    hosts => ["elasticsearch.higee.co"]
+    index => "shopping"
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["${host}"]
+    index => "shopping-backup"
+  }
+}
