@@ -1,0 +1,15 @@
+POST _reindex
+{
+  "source": {
+    "remote": {
+      "host": "http://elasticsearch.higee.co:80"
+        },
+    "index": "shopping",
+    "query": {
+      "match_all": {}
+      }
+    },
+  "dest": {
+    "index": "shopping-backup"
+  }
+}
