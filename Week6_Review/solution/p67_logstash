@@ -1,7 +1,7 @@
 input {
   elasticsearch {
     hosts => ["elasticsearch:9200"]
-    index => "chicago-*"
+    index => "chicago-bike-*"
     query => '{
       "query": {
         "bool": {
