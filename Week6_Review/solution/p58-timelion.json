@@ -4,7 +4,7 @@
     "_type": "visualization",
     "_source": {
       "title": "exercise3 - timelion",
-      "visState": "{\"title\":\"exercise3 - timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=chicago*, timefield=starttime, metric=sum:tripduration).label(현재), .es(index=chicago*, timefield=starttime, metric=sum:tripduration, offset=-1d).label(전일)\",\"interval\":\"auto\"},\"aggs\":[]}",
+      "visState": "{\"title\":\"exercise3 - timelion\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(index=chicago-bike-*, timefield=starttime, metric=sum:tripduration).label(현재), .es(index=chicago-bike-*, timefield=starttime, metric=sum:tripduration, offset=-1M).label(전월)\",\"interval\":\"auto\"},\"aggs\":[]}",
       "uiStateJSON": "{}",
       "description": "",
       "version": 1,
