@@ -1,14 +1,17 @@
-PUT _template/chicago
+PUT _template/chicago-bike
 {
-  "index_patterns": "chicago-*",
+  "index_patterns": "chicago-bike*",
   "mappings": {
-    "chicago": {
+    "chicago-bike": {
       "properties": {
         "starttime": {
           "type": "date"
         },
         "stoptime": {
           "type": "date"
+        },
+        "idx" : {
+          "type": "integer"
         },
         "year": {
           "type": "integer"

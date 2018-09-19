@@ -1,0 +1,16 @@
+{
+  "size": 0,
+  "sort" : [ { "@timestamp" : "desc" } ],
+  "query": {
+    "term": {
+      "nginx.access.geoip.ip" : "%{[clientip]}"
+    }
+  },
+  "aggs": {
+    "this_is_avg": {
+      "avg": {
+        "field": "nginx.access.body_sent.bytes"
+      }
+    }
+  }
+}

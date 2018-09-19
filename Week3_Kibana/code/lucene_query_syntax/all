@@ -1,0 +1,50 @@
+# keyword
+우리
+
+# Field Match
+결제카드:우리
+
+# Exact Field Match
+배송메모:"상품 이상"
+
+# Term
+상품분류: ("니트" "코트")
+
+# Fuzzy
+고객주소_시도:전라도~1
+
+# Proximity
+배송메모: "내에 시간 배송 못함"~2
+
+# Numeric
+상품가격:>5000
+
+# Range
+고객나이: [10 TO 30}
+
+# Wildcard (?)
+고객주소_시도:전라?도
+
+# Wildcard (*)
+상품\*:셔츠
+
+# OR
+고객성별:여성 OR 상품분류:셔츠
+
+# AND
+고객성별:여성 AND 상품분류:셔츠
+
+# NOT
+NOT 구매사이트:옥션
+
+# +
++예약여부:예약
+
+# -
+-구매사이트:11번가
+
+# +/-
+여성 셔츠 +예약 -11번가
+
+# exercise
++_exists_: nginx.access.geoip.region_name +nginx.access.geoip.city_name: Se* -nginx.access.response_code: ("200", "405") nginx.access.method: POST

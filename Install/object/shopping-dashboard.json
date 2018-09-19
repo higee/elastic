@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "AV-a4D_kMbjMXoGxGOm2",
+    "_type": "dashboard",
+    "_source": {
+      "title": "shopping",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 7\":\"rgb(255,255,204)\",\"14 - 21\":\"rgb(253,141,60)\",\"21 - 28\":\"rgb(227,27,28)\",\"7 - 14\":\"rgb(254,217,118)\"},\"legendOpen\":false}},\"gridData\":{\"h\":4,\"i\":\"19\",\"w\":6,\"x\":6,\"y\":7},\"id\":\"AWJdhp4tzMQVnr-9MxxP\",\"panelIndex\":\"19\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":4,\"i\":\"20\",\"w\":6,\"x\":0,\"y\":14},\"id\":\"AWJdii5xzMQVnr-9MxxQ\",\"panelIndex\":\"20\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"mapCenter\":[36.54494944148322,128.199462890625],\"mapZoom\":6},\"gridData\":{\"h\":4,\"i\":\"21\",\"w\":6,\"x\":6,\"y\":3},\"id\":\"AWJgEGqCzMQVnr-9MxxW\",\"panelIndex\":\"21\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"22\",\"w\":9,\"x\":0,\"y\":0},\"id\":\"AWJglBU6zMQVnr-9Mxxa\",\"panelIndex\":\"22\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":4,\"i\":\"24\",\"w\":6,\"x\":0,\"y\":3},\"id\":\"AWJgsNh9zMQVnr-9Mxxe\",\"panelIndex\":\"24\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"gridData\":{\"h\":3,\"i\":\"25\",\"w\":3,\"x\":9,\"y\":0},\"id\":\"AWJguWqpzMQVnr-9Mxxg\",\"panelIndex\":\"25\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":4,\"i\":\"26\",\"w\":6,\"x\":0,\"y\":7},\"id\":\"AWJgycpEzMQVnr-9Mxxi\",\"panelIndex\":\"26\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":3,\"i\":\"27\",\"w\":6,\"x\":0,\"y\":11},\"id\":\"AWJg0q4CzMQVnr-9Mxxk\",\"panelIndex\":\"27\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"28\",\"w\":6,\"x\":6,\"y\":11},\"id\":\"AWJg1XpWzMQVnr-9Mxxl\",\"panelIndex\":\"28\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"h\":4,\"i\":\"29\",\"w\":12,\"x\":0,\"y\":18},\"id\":\"AWJg1wbTzMQVnr-9Mxxm\",\"panelIndex\":\"29\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 1\":\"rgb(165,0,38)\",\"1 - 2\":\"rgb(249,142,82)\",\"2 - 3\":\"rgb(255,255,190)\",\"3 - 4\":\"rgb(135,203,103)\",\"4 - 5\":\"rgb(0,104,55)\"}}},\"gridData\":{\"h\":4,\"i\":\"30\",\"w\":6,\"x\":6,\"y\":14},\"id\":\"AWJg3QUCzMQVnr-9Mxxo\",\"panelIndex\":\"30\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"31\",\"w\":12,\"x\":0,\"y\":22},\"id\":\"AWGI8fjSPloSIAlpOE6c\",\"panelIndex\":\"31\",\"type\":\"visualization\",\"version\":\"6.2.4\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"match_all\":{}}}}"
+      }
+    }
+  }
+]

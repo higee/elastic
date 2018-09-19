@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "bd2418e0-6f26-11e8-a0fb-51f0eb991705",
+    "_type": "dashboard",
+    "_source": {
+      "title": "nginx",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 350\":\"rgb(247,252,245)\",\"1,050 - 1,400\":\"rgb(35,139,69)\",\"350 - 700\":\"rgb(199,233,192)\",\"700 - 1,050\":\"rgb(116,196,118)\"},\"legendOpen\":false}},\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":7},\"id\":\"fe7b9a30-6f20-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"2\",\"w\":4,\"x\":6,\"y\":7},\"id\":\"25a7f140-6f20-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":2,\"x\":10,\"y\":7},\"id\":\"cfbbc570-6f26-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"mapCenter\":[15.284185114076445,12.128906250000002],\"mapZoom\":2},\"gridData\":{\"h\":4,\"i\":\"4\",\"w\":12,\"x\":0,\"y\":10},\"id\":\"7a9123a0-6f27-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":4,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":3},\"id\":\"08e28cc0-6f28-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"6\",\"w\":12,\"x\":0,\"y\":0},\"id\":\"57d11570-6f2a-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"7\",\"w\":6,\"x\":0,\"y\":14},\"id\":\"98a8d0b0-6f2a-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"8\",\"w\":6,\"x\":6,\"y\":14},\"id\":\"4b2430e0-6f2b-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"embeddableConfig\":{\"vis\":{\"colors\":{\"200\":\"#6ED0E0\",\"NOT 200\":\"#F29191\",\"nginx.access.response_code:200\":\"#F29191\"},\"legendOpen\":true}},\"gridData\":{\"h\":3,\"i\":\"9\",\"w\":12,\"x\":0,\"y\":20},\"id\":\"c1d84360-6f2c-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"10\",\"w\":12,\"x\":0,\"y\":23},\"id\":\"7b3cdde0-6f30-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"12\",\"w\":12,\"x\":0,\"y\":17},\"id\":\"de77bd70-6f31-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"12\",\"sort\":[\"nginx.access.body_sent.bytes\",\"desc\"],\"type\":\"search\",\"version\":\"6.2.4\"},{\"gridData\":{\"h\":3,\"i\":\"13\",\"w\":12,\"x\":0,\"y\":26},\"id\":\"b23c8a00-6f32-11e8-a0fb-51f0eb991705\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.2.4\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

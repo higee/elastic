@@ -82,7 +82,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 ```
 $ sudo yum install git -y
-$ git clone -b class4 https://github.com/higee/elastic.git
+$ git clone -b class5 https://github.com/higee/elastic.git
 $ cd /home/ec2-user/elastic/Install/config
 ```
 
@@ -94,22 +94,23 @@ $ sudo chown -R 1000:1000 /home/ec2-user/elastic/
 #### 7. elastic stack 실행
 * 다운 받은 docker-compose.yml에 설치 및 실행에 필요한 모든 정보가 들어있다.
 * 수업 후에 환경에 맞게 customize하고 우선은 default 상태로 실행하자
+* foreground에서 실행하고 log를 확인하자
 
 ```
 $ docker-compose up 
 ```
 
-* 혹은 detached mode로 실행
+* log를 확인했으면 `ctrl+c`로 중단하고 detached mode로 실행하자
 ```
 $ docker-compose up -d
 ```
 
 #### 8. logstash 실행
 * logstash container  실행 : `$ docker exec -it logstash bash`
-    * (permission error 생길 경우 root로 실행 : `$ docker exec -u 0 -it logstash bash`)
+* permission error 생길 경우 root로 실행 : `$ docker exec -u 0 -it logstash bash`
 * logstash 실행 
     * 편의상 configuraiton 파일도 모두 volume 형태로 mount 해두었다
-    * 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class4/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
+    * 실행하고 싶은 scenario를 [여기](https://github.com/higee/elastic/blob/class5/Week5_Logstash/code/logstash.md)에서 찾아서 실행하자
     * 예를 들어 아래와 같이 하면 파일 데이터를 수집하는 logstash를 실행한다 
     ```
     $ bin/logstash -f code/input/file/file-sincedb-path.conf
